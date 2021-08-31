@@ -1,8 +1,8 @@
 @font-face { 
   font-family: 'SegoeWP'; 
-  src: url('assets/fonts/SegoeWP.woff2') format('woff2'), 
-       url('assets/fonts/SegoeWP.ttf')  format('truetype'),
-       url('assets/fonts/SegoeWP.woff') format('woff'); 
+  src: url('../fonts/SegoeWP.woff2') format('woff2'), 
+       url('../fonts/SegoeWP.ttf')  format('truetype'),
+       url('../fonts/SegoeWP.woff') format('woff'); 
   font-weight: normal; 
   font-style: normal;
 }
@@ -11,9 +11,9 @@
 
 @font-face { 
   font-family: 'SegoeWP-Light'; 
-  src: url('assets/fonts/SegoeWP-Light.woff2') format('woff2'), 
-       url('assets/fonts/SegoeWP-Light.ttf')  format('truetype'),
-       url('assets/fonts/SegoeWP-Light.woff') format('woff'); 
+  src: url('../fonts/SegoeWP-Light.woff2') format('woff2'), 
+       url('../fonts/SegoeWP-Light.ttf')  format('truetype'),
+       url('../fonts/SegoeWP-Light.woff') format('woff'); 
   font-weight: normal; 
   font-style: normal; 
 }
@@ -26,7 +26,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
   
 html,body{
-  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -34,7 +33,6 @@ html,body{
 
 .header{
   display: flex;
-  width: 100%;
   height: 565px;
   background: url(../images/header/background.png) no-repeat;
   background-size: cover;
@@ -44,7 +42,7 @@ html,body{
 
 .header__navigation{
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 115px;
   max-height: 115px;
   max-width: 1020px;
@@ -54,16 +52,27 @@ html,body{
 }
 
 .header__inner{
-  width: 100%;
+  width: 90%;
   max-width: 1020px;
   margin: 0 auto;
+}
+
+.header__inner__mobile{
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.navigation__brand img{
+  width: 100%;
+  height: auto;
 }
 
 .navigation__menu{
   display: flex;
   background: url(../images/header/background-menu.png) no-repeat;
   background-size: cover;
-  width: 480px;
+  width: 50%;
   height: 51px;
   align-items: center;
   color: #9b7d08;
@@ -77,10 +86,8 @@ html,body{
 .menu__item{
   display: flex;
   align-items: center;
-  line-height: 40px;
-  height: 51px;
+  height: 50px;
   width: calc(500px/3);
- 
 }
 
 .menu__item div{
@@ -94,26 +101,26 @@ html,body{
 }
 
 .menu__item img{
-width: 21px;
-height: 19px;
-margin-right: 8px;
+  width: 21px;
+  height: 19px;
+  margin-right: 8px;
 }
 
 .header__inner{
-display: flex;
-justify-content: flex-end;
-align-items: center;
-font-family: "Asap", sans-serif;
-font-weight: 400;
-font-size: 63px;
-color: white;
-margin-top: 148px;
-text-transform: uppercase;
-text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  font-size: 63px;
+  color: white;
+  margin-top: 148px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .yellow{
-color: #f5c506;
+  color: #f5c506;
 }
 
 .body__inner{
@@ -126,15 +133,16 @@ color: #f5c506;
 .body__container{
   display: flex;
   height: 214px;
-  width: 1020px;
-  justify-content: space-around;
+  width: 90%;
+  max-width: 1020px;
+  margin: 0 auto;
   border-right: 1px solid #d4d4d4;
   
 }
 
 .container__items{
   display: flex;
-  width: 342px;
+  width: calc(100%/3);
   height: 214px;
   flex-direction: column;
   align-items: center;
@@ -149,6 +157,7 @@ color: #f5c506;
   font-size: 17px;
   text-transform: uppercase;
   font-family: "SegoeWP", sans-serif;
+  text-align: center;
 }
 
 .container__items_design img{
@@ -171,16 +180,15 @@ color: #f5c506;
   background: url(../images/body/section/background.png) no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 508px;
+  padding-bottom: 140px;
   margin: 0 auto;
 }
 
 .section__inner{
   display: flex;
-  width: 1020px;
+  width: 90%;
   max-width: 1020px;
   margin: 0 auto;
-  height: 508px;
   flex-direction: column;
 }
 
@@ -194,11 +202,9 @@ color: #f5c506;
 }
 
 .inner__container{
-  margin-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container__component{
@@ -211,6 +217,7 @@ color: #f5c506;
   background: #ec9e03;
   color: white;
   text-align: center;
+  margin-top: 40px;
 }
 
 .component__description{
@@ -225,13 +232,13 @@ color: #f5c506;
   word-wrap: break-word;
   width: 266px;
   height: 173px;
+  line-height: 1;
 }
 
 .container__component.container__component_twitter{
   display: flex;
   flex-direction: column;
   width: 330px;
-  margin-left: 40px;
 }
 .component__video{
   display: flex;
@@ -267,13 +274,13 @@ color: #f5c506;
   background: url(../images/body/footer/background.png) no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 497px;
   margin: 0 auto;
+  padding-bottom: 70px;
 }
 
 .footer__inner{
   display: flex;
-  max-width: 1020px;
+  width: 90%;
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
@@ -291,6 +298,7 @@ color: #f5c506;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .menu__items{
@@ -299,6 +307,7 @@ color: #f5c506;
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: row;
+  margin: 0 auto;
 }
 
 .menu__second,.menu__third{
@@ -311,8 +320,8 @@ color: #f5c506;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 80px;
   bottom: 0;
+  margin: 0 auto;
   margin-top: 80px;
 }
 
@@ -324,6 +333,7 @@ color: #f5c506;
   font-size: 22px;
   font-weight: 100;
   margin-left: 76px;
+  max-width: 380px;
 }
 
 .list__item::before{
@@ -346,4 +356,138 @@ color: #f5c506;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 640px){
+  .header{
+    height: auto;
+  }
+  .header__inner{
+    display: none;
+  }
+  .header__inner__mobile{
+    display: block;
+  }
+  .header__navigation{
+    display: flex;
+    width: 100%;
+    height: 62px;
+    max-height: 62px;
+    max-width: 640px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .navigation__brand img{
+    display: none;
+  }
+  .navigation__brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 62px;
+    background: #585858;
+  }
+  .menu__item{
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: calc(500px/3);
+  }
+  .menu__item img{
+    width: 24px;
+    height: 22px;
+    margin-right: 8px;
+  }
+  .navigation__menu{
+    background: #f2c306;
+    display: flex;
+    width: 412px;
+    height: 51px;
+    align-items: center;
+    color: #9b7d08;
+    font-size: 16.06px;
+    text-transform: uppercase;
+    font-family: "SegoeWP", sans-serif;
+  }
+  .brand__mobile{
+    width: 157px;
+    height: 39px;
+    background: url(../images/header/m-logo.png) no-repeat;
+    background-size: cover;
+  }
+  .body__inner{
+    background: url(../images/body/container/backgr.png);
+    background-size: cover;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+  }
+  .body__container{
+    width: 100%;
+  }
+  .container__items{
+    border: none;
+  }
+  .section{
+    background: white;
+    position: relative;
+    top: -15px;
+    padding: 0;
+  }
+  .section__inner{
+    width: 100%;
+    padding-top: 5px;
+  }
+  #section__inner__title{
+    display: none;
+  }
+  .container__component{
+    width: 100%;
+    margin-top: 0;
+  }
+  .container__component.container__component_twitter{
+    width: 100%;
+    position: relative;
+    bottom: -15px;
+    background: #f5c507;
+    padding: 0;
+  }
+  .container__component.container__component_twitter .component__icon{
+    display: none;
+  }
+  .container__component.container__component_twitter .component__count{
+    display: none;
+  }
+  .container__component{
+    background: white;
+    padding-top: 15px;
+  }
+  .component__description{
+    font-size: 26px;
+    background: #ec9e03;
+    height: 100%;
+    padding: 0 4%;
+    width: calc(45% - 8% - 15px - 7.5px);
+    display: flex;
+    align-items: center;
+    margin: 0 7.5px 0 15px;
+  }
+  .component__video{
+    width: calc(55% - 15px - 7.5px);
+    margin: 0 15px 0 7.5px;
+  }
+  .component__icon{
+    right: unset;
+    left: 40%;
+  }
+  .footer__inner .inner__title{
+    text-align: center;
+  }
+  .menu__list{
+    display: none;
+  }
 }
