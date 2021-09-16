@@ -1,0 +1,136 @@
+@media screen and (max-width: 640px){
+    .header{
+      height: auto;
+      padding-bottom: 0px;
+    }
+    .header__inner{
+      display: none;
+    }
+    .header__inner__mobile{
+      display: block;
+    }
+    .header__navigation{
+      display: flex;
+      width: 100%;
+      height: 62px;
+      max-height: 62px;
+      max-width: 640px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .navigation__brand img{
+      width: 40px;
+      height: 39px;
+    }
+    .navigation__brand h1{
+      font-size: 19px;
+      margin-right: 5px;
+    }
+    .navigation__brand p{
+      display: none;
+    }
+    .navigation__brand{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 62px;
+      background: #585858;
+    }
+    .menu__item{
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      height: 60px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      width: calc(500px/3);
+    }
+    .menu__item img{
+      width: 24px;
+      height: 22px;
+      margin-right: 8px;
+    }
+    .navigation__menu{
+      background: #f2c306;
+      display: flex;
+      width: 412px;
+      height: 51px;
+      align-items: center;
+      color: #9b7d08;
+      font-size: 16.06px;
+      text-transform: uppercase;
+      font-family: "SegoeWP", sans-serif;
+    }
+    .body__container_inner{
+      background: url(../images/body/container/backgr.png);
+      background-size: cover;
+      position: relative;
+      top: -10px;
+      z-index: 1;
+    }
+    .body__container{
+      width: 100%;
+    }
+    .container__items{
+      border: none;
+    }
+    .section{
+      background: white;
+      position: relative;
+      top: -15px;
+      padding: 0;
+    }
+    .section__inner{
+      width: 100%;
+      padding-top: 5px;
+    }
+    #section__inner__title{
+      display: none;
+    }
+    .container__component{
+      width: 100%;
+      margin-top: 0;
+    }
+    .container__component.container__component_twitter{
+      width: 100%;
+      position: relative;
+      bottom: -15px;
+      background: #f5c507;
+      padding: 0;
+    }
+    .container__component.container__component_twitter .component__icon{
+      display: none;
+    }
+    .container__component.container__component_twitter .component__count{
+      display: none;
+    }
+    .container__component{
+      background: white;
+      padding-top: 15px;
+    }
+    .component__description{
+      font-size: 26px;
+      background: #ec9e03;
+      height: 100%;
+      padding: 0 4%;
+      width: calc(45% - 8% - 15px - 7.5px);
+      display: flex;
+      align-items: center;
+      margin: 0 7.5px 0 15px;
+    }
+    .component__video{
+      width: calc(55% - 15px - 7.5px);
+      margin: 0 15px 0 7.5px;
+    }
+    .component__icon{
+      right: unset;
+      left: 40%;
+    }
+    .footer__inner .inner__title{
+      text-align: center;
+    }
+    .menu__list{
+      display: none;
+    }
+  }

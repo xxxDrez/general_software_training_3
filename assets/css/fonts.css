@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@font-face { 
+    font-family: 'SegoeWP'; 
+    src: url('../fonts/SegoeWP.woff2') format('woff2'), 
+         url('../fonts/SegoeWP.ttf')  format('truetype'),
+         url('../fonts/SegoeWP.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+  
+@font-face { 
+    font-family: 'SegoeWP-Light'; 
+    src: url('../fonts/SegoeWP-Light.woff2') format('woff2'), 
+         url('../fonts/SegoeWP-Light.ttf')  format('truetype'),
+         url('../fonts/SegoeWP-Light.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+  
+@font-face { 
+    font-family: 'Lucida'; 
+    src: url('../fonts/Lucida.woff2') format('woff2'), 
+         url('../fonts/Lucida.ttf')  format('truetype'),
+         url('../fonts/Lucida.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+  
+@font-face { 
+    font-family: 'LaoUI'; 
+    src: url('../fonts/LaoUI.woff2') format('woff2'), 
+         url('../fonts/LaoUI.ttf')  format('truetype'),
+         url('../fonts/LaoUI.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
