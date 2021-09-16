@@ -18,6 +18,24 @@
   font-style: normal; 
 }
 
+@font-face { 
+  font-family: 'Lucida'; 
+  src: url('../fonts/Lucida.woff2') format('woff2'), 
+       url('../fonts/Lucida.ttf')  format('truetype'),
+       url('../fonts/Lucida.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'LaoUI'; 
+  src: url('../fonts/LaoUI.woff2') format('woff2'), 
+       url('../fonts/LaoUI.ttf')  format('truetype'),
+       url('../fonts/LaoUI.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
@@ -33,7 +51,7 @@ html,body{
 
 .header{
   display: flex;
-  height: 565px;
+  padding-bottom: 158px;
   background: url(../images/header/background.png) no-repeat;
   background-size: cover;
   flex-direction: column;
@@ -63,8 +81,35 @@ html,body{
   display: none;
 }
 
+.navigation__brand{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation__brand h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(24px + 11 * (100vw / 1300));
+  font-family: "Lucida", sans-serif;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.navigation__brand p{
+  color: #d0cfcd;
+  font-size: calc(1px + 9 * (100vw / 1300));
+  font-family: "LaoUI", sans-serif;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-left: 6px;
+}
+
 .navigation__brand img{
-  width: 80%; 
+  max-width: 83px;
+  width: 22%;
   height: auto;
 }
 
@@ -88,6 +133,11 @@ html,body{
   align-items: center;
   height: 50px;
   width: calc(500px/3);
+  cursor: pointer;
+}
+
+.menu__item:hover{
+  color: #cea70f;
 }
 
 .menu__item div{
@@ -123,7 +173,7 @@ html,body{
   color: #f5c506;
 }
 
-.body__inner{
+.body__container_inner{
   display: flex;
   margin: 0 auto;
   width: 100%;
@@ -147,7 +197,13 @@ html,body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid #d4d4d4;
+  border-left: 1px solid #dedede;
+  cursor: pointer;
+}
+
+.container__items:hover{
+  background: #dcdcdc;
+  color: white;
 }
 
 .container__items p{
@@ -158,6 +214,7 @@ html,body{
   text-transform: uppercase;
   font-family: "SegoeWP", sans-serif;
   text-align: center;
+  letter-spacing: 1;
 }
 
 .container__items_design img{
@@ -245,8 +302,29 @@ html,body{
   justify-content: center;
   align-items: center;
 }
-.video-play{
+
+.button__play{
+  width: 61px;
+  height: 61px;
+  background: rgb(245, 197, 6);
+  border-radius: 50%;
   position: absolute;
+  opacity: 0.722;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button__play:hover{
+  opacity: 100%;
+}
+
+.play__icon{
+  border-top: 16px solid transparent;
+  border-left: 17px solid white;
+  border-bottom: 16px solid transparent;
+  opacity: 100%;
 }
 
 .container__component_twitter .component__count{
@@ -263,10 +341,12 @@ html,body{
   right: 10px;
   bottom: 13px;
 }
+
 .component__icon{
   position: absolute;
   bottom: 13px;
   right: 325px;
+  cursor: pointer;
 }
 
 .footer{
@@ -358,6 +438,26 @@ html,body{
   align-items: center;
 }
 
+.blogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogo img{
+  width: 54px;
+  height: 54px;
+}
+
+.blogo h1{
+  color: white;
+  text-transform: uppercase;
+  font-family: "Lucida", sans-serif;
+  font-size: 29px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 640px){
   .header{
     height: auto;
@@ -378,6 +478,13 @@ html,body{
     align-items: center;
   }
   .navigation__brand img{
+    width: 40px;
+    height: 39px;
+  }
+  .navigation__brand h1{
+    font-size: 19px;
+  }
+  .navigation__brand p{
     display: none;
   }
   .navigation__brand{
@@ -414,10 +521,10 @@ html,body{
     font-family: "SegoeWP", sans-serif;
   }
   .brand__mobile{
-    width: 157px;
+ /*   width: 157px;
     height: 39px;
     background: url(../images/header/m-logo.png) no-repeat;
-    background-size: cover;
+    background-size: cover;*/
   }
   .body__inner{
     background: url(../images/body/container/backgr.png);
