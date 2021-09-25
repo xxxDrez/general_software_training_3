@@ -6,7 +6,7 @@
     .header__inner{
       display: none;
     }
-    .header__inner__mobile{
+    .player__mobile{
       display: block;
     }
     .header__navigation{
@@ -18,18 +18,18 @@
       margin: 0 auto;
       align-items: center;
     }
-    .navigation__brand img{
+    .brand img{
       width: 40px;
       height: 39px;
     }
-    .navigation__brand h1{
+    .brand h1{
       font-size: 19px;
       margin-right: 5px;
     }
-    .navigation__brand p{
+    .brand p{
       display: none;
     }
-    .navigation__brand{
+    .brand{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,7 +51,7 @@
       height: 22px;
       margin-right: 8px;
     }
-    .navigation__menu{
+    .menu{
       background: #f2c306;
       display: flex;
       width: 412px;
@@ -85,7 +85,7 @@
       width: 100%;
       padding-top: 5px;
     }
-    #section__inner__title{
+    #mobile__title{
       display: none;
     }
     .container__component{
@@ -99,7 +99,7 @@
       background: #f5c507;
       padding: 0;
     }
-    .container__component.container__component_twitter .component__icon{
+    .container__component.container__component_twitter .icon{
       display: none;
     }
     .container__component.container__component_twitter .component__count{
@@ -109,7 +109,7 @@
       background: white;
       padding-top: 15px;
     }
-    .component__description{
+    .description{
       font-size: 26px;
       background: #ec9e03;
       height: 100%;
@@ -119,18 +119,18 @@
       align-items: center;
       margin: 0 7.5px 0 15px;
     }
-    .component__video{
+    .video{
       width: calc(55% - 15px - 7.5px);
       margin: 0 15px 0 7.5px;
     }
-    .component__icon{
+    .icon{
       right: unset;
       left: 40%;
     }
-    .footer__inner .inner__title{
+    .footer__inner .title{
       text-align: center;
     }
-    .menu__list{
+    .container__list{
       display: none;
     }
   }

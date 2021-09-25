@@ -24,13 +24,13 @@
     margin: 0 auto;
   }
   
-  .header__inner__mobile{
+  .player__mobile{
     width: 100%;
     height: auto;
     display: none;
   }
   
-  .navigation__brand{
+  .brand{
     width: auto;
     height: auto;
     display: flex;
@@ -38,7 +38,7 @@
     cursor: pointer;
   }
   
-  .navigation__brand h1{
+  .brand h1{
     color: white;
     text-transform: uppercase;
     font-size: calc(24px + 11 * (100vw / 1300));
@@ -47,7 +47,7 @@
     margin-top: 4px;
   }
   
-  .navigation__brand p{
+  .brand p{
     color: #d0cfcd;
     font-size: calc(1px + 9 * (100vw / 1300));
     font-family: "LaoUI", sans-serif;
@@ -56,13 +56,13 @@
     margin-left: 6px;
   }
   
-  .navigation__brand img{
+  .brand img{
     max-width: 83px;
     width: 22%;
     height: auto;
   }
   
-  .navigation__menu{
+  .menu{
     display: flex;
     background: url(../images/header/background-menu.png) no-repeat;
     background-size: cover;
@@ -197,7 +197,7 @@
     flex-direction: column;
   }
   
-  .inner__title{
+  .title{
     text-transform: uppercase;
     color: white;
     margin-top: 43px;
@@ -225,7 +225,7 @@
     margin-top: 40px;
   }
   
-  .component__description{
+  .description{
     font-family: "SegoeWPLight", sans-serif;
     font-weight: 100;
     font-size: 29px;
@@ -245,7 +245,7 @@
     flex-direction: column;
     width: 330px;
   }
-  .component__video{
+  .video{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,13 +284,13 @@
     text-transform: uppercase;
   }
   
-  .container__component_twitter .component__icon{
+  .container__component_twitter .icon{
     position: absolute;
     right: 10px;
     bottom: 13px;
   }
   
-  .component__icon{
+  .icon{
     position: absolute;
     bottom: 13px;
     right: 325px;
@@ -315,7 +315,7 @@
     align-items: center;
   }
   
-  .footer__inner .inner__title{
+  .footer__inner .title{
     color: #f5c506;
     font-size: 43px;
     margin-top: 50px;
@@ -329,7 +329,7 @@
     flex-wrap: wrap;
   }
   
-  .menu__items{
+  .container{
     margin-top: 13px;
     display: flex;
     justify-content: space-between;
@@ -343,7 +343,7 @@
     margin-bottom: 40px;
   }
   
-  .menu__list{
+  .container__list{
     position: relative;
     display: flex;
     flex-direction: column;
